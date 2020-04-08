@@ -1,0 +1,16 @@
+:global {
+  @import "../../../node_modules/bootstrap/scss/_functions.scss";
+  @import "../../../node_modules/bootstrap/scss/_variables.scss";
+  @import "../../../node_modules/bootstrap/scss/mixins/_hover.scss";
+  @import "../../../node_modules/bootstrap/scss/mixins/_table-row.scss";
+
+  @import 'normalize';
+  @import '../../../node_modules/bootstrap/scss/bootstrap-grid';
+  @import '../../../node_modules/bootstrap/scss/tables.scss';
+  @import '~rc-slider/assets/index';
+  @import '~react-quill/dist/quill.snow';
+
+	@import 'fonts';
+	@import 'global';
+
+}

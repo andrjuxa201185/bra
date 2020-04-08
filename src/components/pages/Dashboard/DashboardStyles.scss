@@ -1,0 +1,137 @@
+.dashboard {
+  h2 {
+    margin-bottom: 25px;
+  }
+}
+
+.tabs {
+  height: 100%;
+}
+
+.infoLink {
+  display: inline-block;
+  color: #008cff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13px;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.infoBlocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.infoBlocksItem {
+  max-width: 25%;
+  flex: 0 0 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 768px){
+    max-width: 45%;
+    flex: 0 0 45%;
+  }
+  @media screen and (max-width: 480px){
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  @media screen and (max-width: 375px){
+    max-width: 80%;
+    flex: 0 0 80%;
+  }
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: 20px 10px;
+  border: 1px solid #dee1e2;
+  background-color: #fff;
+}
+
+.infoBlockBtn {
+  align-self: center;
+}
+
+.infoBlockText {
+  flex-grow: 1;
+  color: #111111;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 15px;
+  span {
+    font-weight: 700;
+  }
+}
+
+.infoBlockValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.infoBlockTitle {
+  color: #111111;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.infoBlockData {
+  display: block;
+  margin-bottom: 15px;
+  color: #7749dd;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+.dashboardList {
+  padding: 15px 20px 10px 20px;
+}
+
+.dashboardNews {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.dashboardNews h3{
+  margin-bottom: 16px;
+}
+
+.processBlock {
+  padding: 20px 30px 10px;
+  @media screen and (max-width: 375px){
+    padding: 10px;
+  }
+}
+
+.processBlockContainer {
+  margin-bottom: 42px;
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.processBlockRow {
+  padding: 25px 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid #f1f1f1;
+  }
+}
+
+.link {
+  color: #008cff;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}

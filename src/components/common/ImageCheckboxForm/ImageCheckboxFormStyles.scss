@@ -1,0 +1,66 @@
+.checkboxForm {
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__wrapperItem {
+    padding: 15px 10px;
+    @media screen and (max-width: 768px) {
+      padding: 10px 5px;
+    }
+    @media screen and (max-width: 375px) {
+      padding: 5px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    & input {
+      display: none;
+      &:checked ~ .checkMark {
+        border: 3px solid #7749dd;
+        ~ .checkboxForm__name {
+          color: #7749dd;
+        }
+      }
+    }
+
+  }
+  &__name {
+    font-size: 13px;
+    font-weight: 700;
+    max-width: 120px;
+    display: block;
+    color: #262626;
+    text-transform: capitalize;
+    transition: color 0.3s linear;
+    @media screen and (max-width: 480px) {
+      max-width: 100px;
+      word-break: break-word;
+    }
+  }
+  &__img {
+    max-width: 100%;
+  }
+}
+
+.checkMark {
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border 0.3s linear;
+  @media screen and (max-width: 480px) {
+    width: 90px;
+    height: 90px;
+  }
+}

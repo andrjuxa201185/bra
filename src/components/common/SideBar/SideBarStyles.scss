@@ -1,0 +1,188 @@
+.sidebar {
+  position: fixed;
+  z-index: 9;
+  top: 70px;
+  bottom: 0;
+  width: 260px;
+  overflow-y: auto;
+  background-color: #024174;
+  display: flex;
+  flex: 0 0 260px;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
+}
+
+.headerbar {
+  padding-top: 50px;
+  display: flex;
+  background-color: #ffffff;
+  @media screen and (max-width: 480px) {
+    padding-top: 30px;
+  }
+}
+
+.sidebarNav {
+  @media screen and (max-width: 980px) {
+    max-width: 60%;
+    flex: 0 0 60%;
+  }
+}
+
+.sidebarNavLink {
+  background-color: transparent;
+  padding: 20px 10px 20px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color .3s ease;
+  @media screen and (max-width: 980px) {
+    padding: 30px 0;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 20px 10px 25px 0;
+  }
+  @media screen and (max-width: 320px) {
+    padding: 15px 10px 15px 0;
+  }
+  &:hover, &.active {
+    background-color: #0062b2;
+    @media screen and (max-width: 980px) {
+      background-color: #ffffff;
+    }
+    .sidebarNavText {
+      color: #fff;
+      @media screen and (max-width: 980px) {
+        color: #008cff;
+        opacity: .5;
+      }
+    }
+    .sidebarNavIcon {
+      fill: #fff;
+      @media screen and (max-width: 980px) {
+        fill: #008cff;
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.sidebarIconContainer {
+  margin-right: 18px;
+  width: 26px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebarNavIcon {
+  fill: #c2e4ff;
+  transition: fill .3s ease;
+  @media screen and (max-width: 980px) {
+    fill: #008cff;
+  }
+}
+
+.sidebarNavText {
+  color: #c2e4ff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color .3s ease;
+  @media screen and (max-width: 980px) {
+    color: #008cff;
+    font-size: 24px;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
+}
+
+//sidebar-menu
+
+.sidebarMenu {
+  margin: 10px 0;
+  @media screen and (max-width: 980px) {
+    margin: 0;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 5px;
+  }
+  @media screen and (max-width: 375px) {
+    margin-top: 3px;
+  }
+  @media screen and (max-width: 375px) {
+    margin-top: 0;
+  }
+}
+
+.sidebarMenuItem {
+  display: block;
+  padding: 20px 10px 20px 50px;
+  position: relative;
+  color: #c2e4ff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s ease;
+  @media screen and (max-width: 980px) {
+    color: #008cff;
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 20px 0 20px 20px;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 15px 0 15px 20px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 13px;
+    padding: 15px 0 15px 20px;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 20px;
+    width: 16px;
+    height: 2px;
+    background-color: #c2e4ff;
+    transform: translateY(-50%);
+    transition: background-color .3s ease;
+    @media screen and (max-width: 980px) {
+      background-color: #008cff;
+    }
+    @media screen and (max-width: 640px) {
+      left: 0;
+    }
+    @media screen and (max-width: 480px) {
+      width: 12px;
+    }
+    @media screen and (max-width: 375px) {
+      left: 0;
+    }
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      background-color: #fff;
+    }
+    @media screen and (max-width: 980px) {
+      color: #008cff;
+      opacity: .5;
+      &:before {
+        background-color: #008cff;
+        opacity: .5;
+      }
+    }
+  }
+}

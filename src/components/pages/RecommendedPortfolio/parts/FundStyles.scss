@@ -1,0 +1,237 @@
+.container {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(222, 225, 226, 0.6);
+  }
+  @media screen and (max-width: 480px) {
+    padding-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+.controls {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+  @media screen and (max-width: 575px) {
+    flex-direction: column;
+  }
+}
+
+
+.arrow {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  pointer-events: auto;
+  &_opened {
+    transform: rotate(180deg) translateY(3px);
+  }
+
+  &__wrapper {
+    margin-left: 43px;
+  }
+}
+
+.progresses {
+  max-width: 80%;
+  flex: 0 0 80%;
+  align-self: stretch;
+  position: relative;
+  padding-right: 64px;
+  margin-left: 10px;
+  @media screen and (max-width: 980px) {
+    padding-right: 75px;
+  }
+  @media screen and (max-width: 575px) {
+    margin-left: 0;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-right: 0;
+  }
+}
+
+.title {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  @media screen and (max-width: 575px) {
+    margin-bottom: 15px;
+  }
+}
+
+.switcher {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @media screen and (max-width: 575px) {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+}
+
+.disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.controlButtons {
+  margin-left: 12px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  @media screen and (max-width: 575px) {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.controlButton {
+  position: relative;
+  margin: 0 3px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #008cff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  @media screen and (max-width: 980px) {
+    width: 25px;
+    height: 25px;
+  }
+  @media screen and (max-width: 575px) {
+    margin: 0 10px;
+    width: 28px;
+    height: 28px;
+  }
+  &:hover {
+    background-color: lighten(#008cff, 20%);
+  }
+}
+
+.controlButtonDecr, .controlButtonIncr {
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+  }
+  &:before {
+    width: 8px;
+    height: 2px;
+  }
+}
+
+.controlButtonIncr {
+  &:after {
+    width: 2px;
+    height: 8px;
+  }
+}
+
+.controlButtonDisable {
+  background-color: #d0e4f2;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.text {
+  color: rgba(17, 17, 17, 0.71);
+  margin-top: 15px;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.fundSlider {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    @media screen and (max-width: 575px) {
+      display: block;
+    }
+  }
+
+  &__title {
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__titleText {
+    color: #262626;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  &__color {
+    margin-right: 12px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+  }
+
+}
+
+.slider {
+  &__container {
+    width: 250px;
+    @media screen and (max-width: 575px) {
+      width: 100%
+    }
+  }
+
+  &__track {
+    background-color: #6e43ca;
+  }
+
+  &__textVal {
+    color: #fff;
+    
+  }
+
+  &__handler {
+    background: #4fc484;
+    height: 20px;
+    top: -3px;
+    border-radius: 50px;
+    right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    cursor: -webkit-grab;
+    cursor: grab;
+    position: absolute;
+    width: 50px;
+    transform: translateX(-50%);
+  }
+}

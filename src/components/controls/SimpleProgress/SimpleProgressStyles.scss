@@ -1,0 +1,38 @@
+.progressBarContainer {
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.progressIcon {
+  margin-right: 14px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.progressBar {
+  flex-grow: 1;
+  margin-right: 8px;
+  width: 190px;
+  height: 20px;
+  border: 1px solid #ededed;
+  background-color: #ffffff;
+  @media screen and (max-width: 480px) {
+
+  }
+}
+
+.progressLine {
+  min-width: 2px;
+  height: 100%;
+  transition: width 1s linear;
+}
+
+.progressValue {
+  width: 45px;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: right;
+}

@@ -1,0 +1,46 @@
+.activityTable {
+  padding: 20px 30px;
+  table {
+    border-collapse: collapse;
+    th, td {
+      padding: 15px 0;
+      border-top: 0;
+      border-bottom: 1px solid #dee2e6;
+    }
+  }
+}
+
+.dateContainer {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.divider {
+  margin: 0 10px 15px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #ccc;
+}
+
+.datePickerWrap {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    width: 20px;
+    height: 20px;
+    background: url("../../../../assets/images/icons/date.png") no-repeat center;
+  }
+}
+
+.emptyState {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

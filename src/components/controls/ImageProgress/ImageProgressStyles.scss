@@ -1,0 +1,32 @@
+.progressBarScale {
+  margin: 40px 30px 60px;
+  position: relative;
+  background: url("../../../assets/images/progress-bg.png") no-repeat top center;
+  height: 114px;
+  background-size: contain;
+}
+
+.progressArrow {
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-85deg);
+  transform-origin: 50% 76%;
+  background: url("../../../assets/images/progress-arrow.png") no-repeat top center;
+  height: 88px;
+  width: 42px;
+  background-size: contain;
+  transition: transform 1s ease;
+}
+
+.progressValue {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 22px;
+  text-transform: uppercase;
+}

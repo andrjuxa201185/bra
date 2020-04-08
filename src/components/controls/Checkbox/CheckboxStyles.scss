@@ -1,0 +1,45 @@
+.container {
+
+  label {
+    display: inline-block;
+    position: relative;
+  }
+
+  input {
+    position: absolute;
+    left: -9999px;
+  }
+
+  input:checked + div:before {
+    background-image: url("../../../assets/images/icons/check.png");
+  }
+}
+
+.text {
+  color: #959596;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  padding-left: 25px;
+  &:before {
+    left: 0;
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 2px;
+    border: 1px solid #d4d4d4;
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -2px;
+  }
+}
+
+.error {
+  &:before {
+    border-color: #FF4236;
+  }
+
+}

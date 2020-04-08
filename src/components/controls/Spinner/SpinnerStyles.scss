@@ -1,0 +1,92 @@
+
+.spinner {
+  transition: 0.2s ease-in-out;
+  position: relative;
+  animation: spill  1s infinite 0.2s ease-in-out;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_sm {
+    width: 26px;
+    height: 26px;
+
+    div {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  &_md {
+    width: 48px;
+    height: 48px;
+    div {
+      width: 11px;
+      height: 11px;
+      &:nth-child(5) {
+        width: 30px;
+        height: 30px;
+        background-color: #008cff;
+        //background-color: white;
+      }
+    }
+  }
+
+  &_lg {
+    width: 64px;
+    height: 64px;
+    div {
+      width: 13px;
+      height: 13px;
+      &:nth-child(5) {
+        width: 40px;
+        height: 40px;
+        background-color: #008cff;
+      }
+    }
+  }
+
+  div {
+    display: block;
+    border-radius: 30px;
+    position: absolute;
+
+    &:first-child {
+      background-color: #d6315d;
+      top: 0;
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      top: 0;
+      right: 0;
+      background-color: #ff9b00;
+    }
+    &:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      background-color: #22dddd;
+    }
+    &:nth-child(4) {
+      bottom: 0;
+      left: 0;
+      background-color: #38c74b;
+    }
+    &:nth-child(5) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@keyframes spill {
+  from {transform: rotate(0deg)}
+  50% {transform: rotate(180deg)}
+  to {transform: rotate(0deg)}
+}
+

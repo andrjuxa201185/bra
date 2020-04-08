@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+p {
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #111111;
+}
+
+a {
+  transition: .3s ease-in-out;
+	text-decoration: none;
+  color: #008cff;
+  cursor: pointer;
+}
+
+button {
+  transition: .3s ease-in-out;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+  padding: 30px 0;
+  font-size: 30px;
+  font-weight: 900;
+  color: #262626;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #262626;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 900;
+  color: #262626;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+  height: 100%;
+}
+
+#root, #root > div {
+  height: 100%;
+}
+
+.mainContent {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.contentContainer {
+  width: 100%;
+  padding: 0 40px;
+  @media screen and (max-width: 640px){
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 480px){
+    padding: 0 10px;
+  }
+}
+
+.auth {
+  &__background {
+    background-color: white;
+    background-image: url("../images/auth-bg.jpg");
+    background-size: 100%;
+    min-height: 100vh;
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: 640px){
+      padding: 0 25px 25px;
+    }
+    @media screen and (max-width: 375px){
+      padding: 0 5px 20px;
+    }
+  }
+
+  &__inputWrapper {
+    padding-bottom: 35px;
+    position: relative;
+    @media screen and (max-width: 480px){
+      padding-bottom: 10px;
+    }
+  }
+
+  &__btnWrapper {
+    padding-top: 10px;
+  }
+
+  &__signIn {
+    text-align: center;
+    padding-top: 30px;
+    color: #767676;
+    font-size: 14px;
+    font-weight: 400;
+    a {
+      color: #008cff;
+    }
+  }
+}
+
+.panel {
+  border: 1px solid #dee1e2;
+  background-color: #fff;
+}
+
+.topPanel {
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.error-text {
+  font-size: 12px;
+  color: #FF4236;
+}
+
+.sliderTooltip {
+  .rc-slider-tooltip-inner {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .rc-slider-tooltip-arrow {
+    display: none;
+  }
+}
+
+.quill {
+  max-width: 718px;
+  width: 100%;
+  .ql-toolbar {
+    border-radius: 3px 3px 0 0;
+    padding: 8px;
+    button, .ql-icon-picker, .ql-color-picker  {
+      margin-right: 6px;
+      width: 29px;
+      height: 25px;
+      border-radius: 3px;
+      border: 1px solid #cbd1d4;
+      background-color: #f9f9f9;
+    }
+    .ql-formats {
+      @media screen and (max-width: 375px){
+        margin-right: 10px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .ql-container {
+    border-radius: 0 0 3px 3px;
+    height: 150px;
+    background-color: #fafafa;
+  }
+  .ql-editor {
+    img {
+      max-height: 100%;
+      max-width: 150px;
+    }
+  }
+}
+
+.hidden {
+  display: none!important;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.toolTip {
+  display: block;
+  max-width: 300px;
+  line-height: 1.5em;
+  text-align: center;
+  @media screen and (max-width: 480px) {
+    max-width: 200px;
+    padding: 10px;
+    line-height: 1.3em;
+  }
+}
+
+.worldViewTitle {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}
+
+.stub {
+  display: flex;
+  &__text {
+    color: #414141;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+  }
+
+  &__image {
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.sigCanvas {
+  border: 2px solid #888;
+  margin-bottom: 30px;
+}

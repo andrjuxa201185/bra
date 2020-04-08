@@ -1,0 +1,108 @@
+
+.categories {
+  will-change: transform;
+  width: 515px;
+  height: 515px;
+  position: relative;
+  a {
+    transform: scale(0.01);
+  }
+  @media screen and (max-width: 640px){
+    width: 400px;
+    height: 400px;
+  }
+  @media screen and (max-width: 480px){
+    width: 320px;
+    height: 320px;
+  }
+  @media screen and (max-width: 375px){
+    width: 300px;
+    height: 300px;
+  }
+  @media screen and (max-width: 320px){
+    width: 280px;
+    height: 300px;
+  }
+
+  &.animateRun a{
+    animation: show .4s ease-in-out forwards;
+    animation-play-state: running;
+  }
+  &.animateStop a{
+    animation-play-state: paused !important;
+  }
+
+  a:nth-child(1) {
+    animation-delay: .15s;
+  }
+  a:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  a:nth-child(3) {
+    animation-delay: 0.45s;
+  }
+  a:nth-child(4) {
+    animation-delay: .6s;
+  }
+  a:nth-child(5) {
+    animation-delay: .75s;
+  }
+  a:nth-child(6) {
+    animation-delay: .9s;
+  }
+  a:nth-child(7) {
+    animation-delay: 1.05s;
+  }
+  a:nth-child(8) {
+    animation-delay: 1.3s;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    @media screen and (max-width: 640px) {
+      padding: 20px;
+    }
+    @media screen and (max-width: 640px){
+      padding: 10px;
+    }
+    @media screen and (max-width: 375px){
+      padding: 5px;
+    }
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.progress {
+  &__title {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+}
+
+.pageHeading {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.buttonWrapper {
+  width: 100%;
+  margin: 0 auto 45px;
+  max-width: 280px;
+}
+
+
+

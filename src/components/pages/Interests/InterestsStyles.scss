@@ -1,0 +1,131 @@
+.interests {
+  &__text {
+    margin-bottom: 25px;
+  }
+  a {
+    color: #008cff;
+    font-weight: 500;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.tooltip {
+  color: #7749dd;
+  font-weight: 500;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  &__text {
+    visibility: hidden;
+    width: 463px;
+    border-radius: 6px;
+    height: 106px;
+    box-shadow: 0 4px 14px rgba(2, 65, 116, 0.37);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    max-width: 400px;
+    background-color:  #337AB7 !important;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 6px 8px 0 8px;
+      border-style: solid;
+      border-color: #337AB7 transparent transparent transparent;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: 300px;
+    }
+  }
+
+  &:hover &__text {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.categories {
+  padding: 40px 40px 0;
+  @media screen and (max-width: 768px) {
+    padding: 30px 10px 10px;
+  }
+}
+
+// slider
+.interests__slider {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 470px;
+}
+
+.slider {
+  display: flex;
+  margin: 60px 0;
+  width: 350px;
+  &__line {
+    width: 100%;
+    margin: 0 18px;
+  }
+  &__scale {
+    color: #262626;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+    padding: 0 10px;
+    width: 250px;
+  }
+}
+
+.percent {
+  background-color: transparent;
+  color: #262626;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.sliderSendButton {
+  width: 100px;
+  margin-left: 20px;
+  //margin-bottom: 40px;
+}
+
+.weightSent {
+  font-size: 13px;
+  color: rgba(49, 214, 71, 0.82);
+  background: rgba(49, 214, 71, 0.2);
+  font-weight: 800;
+  width: 100px;
+  margin-left: 20px;
+  padding: 0 25px;
+  height: 31px;
+  line-height: 32px;
+}
+
+.buttons {
+  padding: 40px 40px 20px;
+  @media screen and (max-width: 480px) {
+    padding: 30px 10px 10px;
+  }
+}

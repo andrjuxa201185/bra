@@ -1,0 +1,126 @@
+.progressBar {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progressLine {
+  width: 0;
+  height: 100%;
+  transition: width 1s linear;
+}
+
+.progressLineContent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding: 0 5px;
+}
+
+.progressValue {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.progressTitle {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.progressInfoCenter {
+  justify-content: center;
+}
+
+.progressLabel {
+  text-align: center;
+  color: #262626;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  span {
+    font-weight: 700;
+  }
+}
+
+.progressLink {
+  color: #008cff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.progressStatus {
+  display: flex;
+  align-items: center;
+  color: #262626;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.progressStatusIcon {
+  margin-right: 7px;
+}
+
+.primary {
+  .progressBar {
+    height: 20px;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+  }
+  .progressLine {
+    border-radius: 10px;
+    background-color: #31d647;
+    background-image: linear-gradient(to right, #31d647 0%, #128922 100%);
+  }
+  .progressValue {
+    font-weight: 500;
+  }
+}
+
+.secondary {
+  .progressBar {
+    padding: 15px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+  }
+  .progressLine {
+    border-radius: 15px;
+    background-color: #888888;
+    background-image: linear-gradient(to right, #7749dd 0%, #55349d 100%);
+  }
+  .progressLabel {
+    color: #111111;
+    font-weight: 500;
+    span {
+      font-weight: 900;
+    }
+  }
+  .progressTitle {
+    margin-bottom: 34px;
+    text-align: center;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}

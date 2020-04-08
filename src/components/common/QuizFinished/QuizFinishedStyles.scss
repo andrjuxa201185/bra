@@ -1,0 +1,31 @@
+.container {
+  padding: 60px;
+  background-size: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center top;
+  background-image: url('../../../assets/images/qiuz-finished-bg.png');
+  @media screen and (max-width: 480px){
+    padding: 30px 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.icon {
+  margin-bottom: 35px;
+}
+
+.title {
+  color: #767676;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 30px;
+  @media screen and (max-width: 480px){
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,22 @@
+
+.directionBlock {
+  padding: 25px 20px 30px;
+  &__info {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 0 48px 20px 0;
+    @media screen and (max-width: 768px) {
+      padding: 0 0 20px;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    color: #262626;
+  }
+  &__buttonContainer {
+    max-width: 180px;
+  }
+}

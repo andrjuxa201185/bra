@@ -1,0 +1,33 @@
+.list {
+  list-style: none;
+}
+.listItem {
+  position: relative;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 10px 0 10px 16px;
+  @media screen and (max-width: 480px){
+    padding: 8px 0 8px 10px;
+  }
+  &__link {
+    display: inline-block;
+    color: #008cff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    word-break: break-all;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #008cff;
+    transform: translateY(-50%);
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,58 @@
+.container {
+  //color: #fff;
+  background-color: rgba(110, 67, 202, 0.2);
+  padding: 15px;
+  b {
+    letter-spacing: 0.8px;
+  //  color: rgba(255, 255, 255, 0.85)
+  }
+  p {
+    margin-bottom: 15px;
+   // color: #fff;
+    line-height: 22px;
+  }
+
+  ul {
+    margin-bottom: 20px;
+    li {
+      // color: #fff;
+      line-height: 25px;
+    }
+  }
+}
+
+.pullDown {
+  margin-bottom: 20px;
+  &__title {
+    margin-bottom: 15px;
+    letter-spacing: 0.6px;
+    transition: 0.2s ease-in-out;
+   // color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    padding: 5px 10px 5px 0;
+    justify-content: space-between;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.iconsList {
+  list-style-type: none;
+  margin-left: 0;
+  &__icon {
+    height: 25px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
+.switchIcon {
+  position: relative;
+  width: 30px;
+  top: 3px;
+}
